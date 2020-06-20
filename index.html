@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<script>
+function show() {
+  const options = {
+    type: 'save-file',
+    accepts: [{extension: '.jpg'}],
+    excludeAcceptAllOption: true,
+  };
+  window.chooseFileSystemEntries(options);
+}
+</script>
+<button onclick="show()">
+chooseFileSystemEntries
+</button>
+
