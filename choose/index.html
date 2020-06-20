@@ -3,7 +3,7 @@
 function show() {
   const options = {
     type: 'save-file',
-    accepts: [{extension: '.jpg'}],
+    accepts: [{extension: '.jpg', mimeTypes: ['image/jpeg']}],
     excludeAcceptAllOption: true,
   };
   window.chooseFileSystemEntries(options);
