@@ -29,7 +29,7 @@
       p.footer {
         font-size: 8pt;
       }
-    `}onAudioClick(t){qt=t.target.checked;const e=Ht;Ht="",ee(e)}audioCheck(){return z`<label>
+    `}onAudioClick(t){qt=t.target.checked;const e=Ht;Ht="",se(e)}audioCheck(){return z`<label>
       <input
         type="checkbox"
         id="audio-check"
@@ -44,7 +44,8 @@
         display: flex;
         flex-direction: row;
         height: 90vh;
-        overflow: scroll;
+        overflow-x: scroll;
+        overflow-y: hidden;
         scroll-snap-type: x mandatory;
         width: 100vw;
       }
@@ -53,4 +54,4 @@
       }`}firstUpdated(){Gt=this.shadowRoot.querySelector("mwc-snackbar")}render(){return z`
       <slot></slot>
       <mwc-snackbar></mwc-snackbar>
-    `}};Kt=zt([Y("e-container")],Kt);const Xt=new Kt;function Yt(t){return!!t.annotation.startsWith("regional indicator")}function Qt(t){return t.group?3===t.group?-2:7===t.group?-1:t.group:9999}let Zt=Promise.resolve(),te=()=>{};async function ee(t){const e=()=>function(t){if(t===Ht)return;if(Ht=t,!qt)return;const e=new SpeechSynthesisUtterance(t);Zt=new Promise((t=>{const s=e=>{Zt=Promise.resolve(),t(),e instanceof SpeechSynthesisErrorEvent&&(Gt.labelText=`AudioError: ${e.error}`,Gt.show())};e.addEventListener("end",s),e.addEventListener("error",s)})),window.speechSynthesis.speak(e)}(t);te=e,await Zt,e===te&&e()}document.addEventListener("DOMContentLoaded",(t=>{document.body.appendChild(Xt),$t=new IntersectionObserver(((t,e)=>{const s=t.map((t=>t.target));ee(s[0].e.annotation);for(const t of s)t.shadowRoot.querySelector("input").checked=qt}),{root:Xt,rootMargin:"0px",threshold:.6}),async function(){const t=await async function(){const t=await Bt;return t.sort(((t,e)=>{const[s,n]=[t,e].map(Qt);return s!==n?s-n:t.annotation.localeCompare(e.annotation)})),t}();for(const e of t){const t=e;Yt(t)||Xt.appendChild(new Jt(t))}}()}))})();
+    `}};Kt=zt([Y("e-container")],Kt);const Xt=new Kt;function Yt(t){return!!t.annotation.startsWith("regional indicator")}function Qt(t){return t.group?3===t.group?-2:7===t.group?-1:t.group:9999}let Zt=Promise.resolve(),te=!1,ee=()=>{};async function se(t){const e=()=>function(t){if(t===Ht)return;if(Ht=t,!qt)return;const e=new SpeechSynthesisUtterance(t);Zt=new Promise((t=>{const s=e=>{Zt=Promise.resolve(),t(),e instanceof SpeechSynthesisErrorEvent&&(Gt.labelText=`AudioError: ${e.error}`,Gt.show())};e.addEventListener("end",s),e.addEventListener("error",s)})),window.speechSynthesis.speak(e)}(t);ee=e,await Zt,e===ee&&(e(),te&&localStorage.setItem("resume",t))}function ne(){const t=localStorage.getItem("resume");te=!0,t&&[...Xt.querySelectorAll("e-page")].find((e=>e.e.annotation===t))?.scrollIntoView({behavior:"smooth"})}document.addEventListener("DOMContentLoaded",(t=>{document.body.appendChild(Xt),$t=new IntersectionObserver(((t,e)=>{const s=t.map((t=>t.target));se(s[0].e.annotation);for(const t of s)t.shadowRoot.querySelector("input").checked=qt}),{root:Xt,rootMargin:"0px",threshold:.6}),async function(){const t=await async function(){const t=await Bt;return t.sort(((t,e)=>{const[s,n]=[t,e].map(Qt);return s!==n?s-n:t.annotation.localeCompare(e.annotation)})),t}();for(const e of t){const t=e;Yt(t)||Xt.appendChild(new Jt(t))}}()})),window.addEventListener("load",(t=>{setTimeout(ne,200)}))})();
