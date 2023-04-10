@@ -10,7 +10,7 @@
   "short_name": "Words",
   "theme_color": "#2196f3",
   "background_color": "#2196f3",
-  "display": "fullscreen",
-  "orientation": "portrait",
+  "display": "standalone",
+  "orientation": "any",
   "start_url": "index.html"
 }
