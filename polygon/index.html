@@ -1,0 +1,92 @@
+<style>
+* {
+  font-family: sans-serif;
+}
+form {
+  display: grid;
+  grid-template-columns: 50px 100px;
+  gap: 4px;
+}
+form > *:nth-child(odd) {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+@media print {
+  form {
+    display: none;
+ }
+}
+</style>
+<title>Polygon</title>
+<main>
+<form>
+  <label for="sides">Sides:</label><input id="sides" name="sides" type="number" value="12">
+  <label for="size">Size:</label><input id="size" name="size" type="number" value="200">
+  <label for="fill">Fill:</label><input id="fill" name="fill" value="rainbow">
+  <label for="stroke">Stroke:</label><input id="stroke" name="stroke" value="black">
+</form>
+<canvas></canvas>
+</main>
+<script>
+const DEFAULT = {
+  sides: 12,
+  size: 200,
+  fill: "rainbow",
+  stroke: "black"
+};
+function polygon(args) {
+  let {sides, size, fill, stroke} = {...DEFAULT, ...args};
+  sides = Number(sides);
+  size = Number(size);
+  const canvas = document.querySelector('canvas');
+  canvas.height = size * 2 + 10;
+  canvas.width = size * 2 + 10;
+  document.body.appendChild(canvas);
+  const ctx = canvas.getContext('2d');
+  const Xcenter = size + 5;
+  const Ycenter = size + 5;
+
+  ctx.beginPath();
+  let x = Xcenter +  size * Math.cos(0);
+  let y = Ycenter +  size *  Math.sin(0);
+  ctx.moveTo(x, y);
+
+  for (let i = 1; i <= sides; ++i) {
+    const arc = i * 2 * Math.PI / sides;
+    x = Xcenter + size * Math.cos(arc);
+    y = Ycenter + size * Math.sin(arc);
+    ctx.lineTo (x, y);
+  }
+
+  if (fill == "rainbow") {
+    let grad = ctx.createLinearGradient(40, 40, size * 2 - 30, size * 2 - 30);
+    grad.addColorStop(0, "red");
+    grad.addColorStop(0.2, "orange");
+    grad.addColorStop(0.35, "yellow");
+    grad.addColorStop(0.45, "green");
+    grad.addColorStop(0.7, "blue");
+    grad.addColorStop(0.8, "indigo");
+    grad.addColorStop(1, "violet");
+    ctx.fillStyle = grad;
+  } else {
+    ctx.fillStyle = fill;
+  }
+
+  ctx.lineWidth = 1;
+  ctx.fill();
+  ctx.strokeStyle = stroke;
+  ctx.stroke();
+}
+
+function draw() {
+  const form = new FormData(document.querySelector('form'));
+  polygon(Object.fromEntries(form.entries()));
+}
+
+draw();
+
+for (const input of document.querySelectorAll('input')) {
+  input.addEventListener('input', draw);
+}
+</script>

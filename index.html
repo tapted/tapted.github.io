@@ -1,15 +1,57 @@
 <!DOCTYPE html>
-<script>
-function show() {
-  const options = {
-    type: 'save-file',
-    accepts: [{extension: '.jpg'}],
-    excludeAcceptAllOption: true,
-  };
-  window.chooseFileSystemEntries(options);
-}
-</script>
-<button onclick="show()">
-chooseFileSystemEntries
-</button>
-
+<style>
+  * {
+    font-family: sans-serif;
+  }
+  li > p {
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+  a.src {
+    font-family: monospace;
+  }
+</style>
+<title>Trent's github.io pages</title>
+<main>
+<h1>Sitemap</h1>
+<h2>Toy Projects</h2>
+<ul>
+  <li>
+    <a href="colourgrid/">colourgrid/</a>
+    <p>
+      A "pixel" grid drawing game my kids like.
+    </p>
+  </li>
+  <li>
+    <a href="emicon/">emicon/</a>
+    <p>
+      Turns emoji into app icons.
+    </p>
+  </li>
+  <li>
+    <a href="feedme/">feedme/</a>
+    <p>
+      A firebase app (PWA) we used to track feeds for our twins when they were newborn.
+    </p>
+  </li>
+  <li>
+    <a href="polygon/">polygon/</a>
+    <a class="src" href="https://codepen.io/tapted/pen/MWxPOxO">codepen</a>
+    <p>
+      My 5-year old wanted to print polygons to cut out. We made this.
+    </p>
+  </li>
+  <li>
+    <a href="words/">words/</a>
+    <p>
+      A PWA. Uses emoji and TTS to help kids learn words.
+    </p>
+</ul>
+<h2>Browser testing</h2>
+<ul>
+  <li><a href="choose/">choose/</a></li>
+</ul>
+</main>
+<footer>
+<a href="https://github.com/tapted/tapted.github.io">View on github</a>.
+</footer>
