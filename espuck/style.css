@@ -1,0 +1,250 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #030805;
+    color: #e0f2e9;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    position: relative;
+    overflow-x: hidden;
+}
+
+/* Ambient Background Gradients */
+.glow-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background: 
+        radial-gradient(circle at 15% 50%, rgba(27, 76, 39, 0.15), transparent 50%),
+        radial-gradient(circle at 85% 30%, rgba(77, 184, 255, 0.1), transparent 50%),
+        radial-gradient(circle at 50% 80%, rgba(10, 46, 22, 0.2), transparent 50%);
+    pointer-events: none;
+}
+
+.container {
+    background: linear-gradient(145deg, rgba(15, 33, 22, 0.8) 0%, rgba(5, 12, 8, 0.9) 100%);
+    border: 1px solid rgba(77, 184, 255, 0.2);
+    box-shadow: 
+        0 8px 32px 0 rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(77, 184, 255, 0.05) inset;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 24px;
+    width: 100%;
+    max-width: 600px;
+    padding: 3rem 2.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Accent top border gradient */
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #1b4c27, #4db8ff, #1b4c27);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+.logo {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 25px rgba(77, 184, 255, 0.2);
+    border: 2px solid rgba(77, 184, 255, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 35px rgba(77, 184, 255, 0.4);
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+    /* Neon Text Effect */
+    color: #fff;
+    text-shadow: 
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px #4db8ff,
+        0 0 40px #4db8ff,
+        0 0 80px #4db8ff;
+}
+
+.subtitle {
+    color: #8abeb0;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.intro {
+    text-align: center;
+    line-height: 1.6;
+    color: #b3d4c6;
+    margin-bottom: 2.5rem;
+}
+
+.flasher-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    margin-bottom: 2.5rem;
+    border: 1px solid rgba(27, 76, 39, 0.3);
+}
+
+esp-web-install-button {
+    margin-bottom: 1rem;
+}
+
+/* Customizing the shadow DOM of the ESP button isn't directly possible via external CSS without JS hacks, 
+   so we wrap it nicely to draw attention to it */
+
+.browser-warning {
+    font-size: 0.85rem;
+    color: #7b9e8f;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.instructions {
+    margin-bottom: 2.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+    color: #fff;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+h2::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 24px;
+    background: linear-gradient(180deg, #4db8ff, #1b4c27);
+    margin-right: 12px;
+    border-radius: 4px;
+}
+
+ol {
+    list-style-position: inside;
+    color: #b3d4c6;
+    line-height: 1.8;
+}
+
+ol li {
+    margin-bottom: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+ol li strong {
+    color: #4db8ff;
+    font-weight: 600;
+}
+
+.drivers p {
+    color: #b3d4c6;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.driver-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.gradient-link {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: linear-gradient(135deg, rgba(27, 76, 39, 0.4) 0%, rgba(10, 46, 22, 0.6) 100%);
+    border: 1px solid rgba(77, 184, 255, 0.3);
+    color: #4db8ff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.gradient-link:hover {
+    background: linear-gradient(135deg, rgba(77, 184, 255, 0.1) 0%, rgba(27, 76, 39, 0.5) 100%);
+    border-color: #4db8ff;
+    box-shadow: 0 0 15px rgba(77, 184, 255, 0.2);
+    transform: translateY(-1px);
+}
+
+.code-block {
+    background: #020503;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 1px solid rgba(27, 76, 39, 0.3);
+    margin: 1rem 0;
+    overflow-x: auto;
+}
+
+.code-block code {
+    font-family: monospace;
+    color: #4db8ff;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dev-link {
+    color: #6a8c7e;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+}
+
+.dev-link:hover {
+    color: #4db8ff;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 2rem 1.5rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+}

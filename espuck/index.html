@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>espuck | Web Flasher</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glow-bg"></div>
+    <div class="container">
+        <header>
+            <img src="6143.webp" alt="espuck logo" class="logo">
+            <h1>espuck</h1>
+            <p class="subtitle">Board Game Tracker Updates</p>
+        </header>
+
+        <main>
+            <section class="intro">
+                <p>Keep your espuck running the latest firmware for flawless turn and point tracking. Connect your device via USB to flash the latest system image directly from your browser.</p>
+            </section>
+
+            <section class="flasher-section">
+                <!-- ESP Web Tools Integration -->
+                <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+                <esp-web-install-button manifest="manifest.json"></esp-web-install-button>
+                <p class="browser-warning">Note: Requires Chrome, Edge, or Brave. Safari and Firefox do not support Web Serial.</p>
+            </section>
+
+            <section class="instructions">
+                <h2>How to Update</h2>
+                <ol>
+                    <li>Plug the espuck device into your computer using a data-capable USB cable.</li>
+                    <li>Click the <strong>Connect</strong> button above.</li>
+                    <li>Select the USB serial port from the popup (usually labelled "USB JTAG/serial debug unit", "CP210x", or "CH340").</li>
+                    <li>Click <strong>Install espuck</strong> and wait for the process to complete.</li>
+                </ol>
+            </section>
+
+            <section class="drivers">
+                <h2>Troubleshooting & Drivers</h2>
+                <p>If you don't see a COM port when you click Connect, your computer might be missing the necessary USB drivers.</p>
+                <div class="driver-links">
+                    <a href="https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers" target="_blank" class="gradient-link">CP210x Drivers</a>
+                    <a href="https://learn.sparkfun.com/tutorials/how-to-install-ch340-drivers/all" target="_blank" class="gradient-link">CH34x Drivers</a>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <a href="developer.html" class="dev-link">Developer Instructions</a>
+        </footer>
+    </div>
+</body>
+</html>
