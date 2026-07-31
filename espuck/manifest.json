@@ -6,8 +6,24 @@
       "chipFamily": "ESP32-S3",
       "parts": [
         {
-          "path": "combined_firmware.bin",
+          "path": "bootloader.bin",
           "offset": 0
+        },
+        {
+          "path": "partition-table.bin",
+          "offset": 32768
+        },
+        {
+          "path": "ota_data_initial.bin",
+          "offset": 61440
+        },
+        {
+          "path": "espuck.bin",
+          "offset": 196608
+        },
+        {
+          "path": "storage.bin",
+          "offset": 8585216
         }
       ]
     }
