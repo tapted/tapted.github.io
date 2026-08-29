@@ -1,121 +1,265 @@
 <!DOCTYPE html>
-<style>
-  * {
-    font-family: sans-serif;
-  }
-  li > p {
-    margin-top: 4px;
-    margin-bottom: 8px;
-  }
-  a.src {
-    font-family: monospace;
-  }
-</style>
-<title>Trent's github.io pages</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & Meta Tags -->
+  <title>Trent's Projects | ESP32 & Web Development</title>
+  <meta name="description" content="Portfolio of C++26 ESP32 projects, hardware abstraction layers, Stack-based JSON Library, and interactive web tools.">
+  <meta name="author" content="Trent Apted">
+  <meta name="robots" content="index, follow">
+  
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="Trent's Projects">
+  <meta property="og:description" content="Portfolio of C++26 ESP32 projects, hardware abstraction layers, Stack-based JSON Library, and interactive web tools.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tapted.github.io/">
+  
+  <!-- Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg-gradient-start: #0f172a;
+      --bg-gradient-end: #020617;
+      --card-bg: rgba(30, 41, 59, 0.5);
+      --card-border: rgba(255, 255, 255, 0.1);
+      --card-hover: rgba(56, 189, 248, 0.4);
+      --text-main: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #7dd3fc;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, var(--bg-gradient-start), var(--bg-gradient-end));
+      color: var(--text-main);
+      line-height: 1.6;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    main {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Typography */
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 3rem;
+      text-align: center;
+      background: linear-gradient(to right, var(--text-main), var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    h2 {
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin: 2.5rem 0 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 0.5rem;
+    }
+
+    h2 svg {
+      width: 28px;
+      height: 28px;
+      color: var(--accent);
+    }
+
+    a {
+      color: var(--accent);
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--accent-hover);
+      text-decoration: underline;
+    }
+
+    /* Grid & Cards */
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .project-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 12px;
+      padding: 1.5rem;
+      backdrop-filter: blur(10px);
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--card-hover);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .project-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+      flex-grow: 1;
+    }
+
+    .project-links {
+      display: flex;
+      gap: 1rem;
+      font-size: 0.85rem;
+      font-family: monospace;
+      margin-top: auto;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    footer {
+      max-width: 1200px;
+      margin: 4rem auto 1rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
 <main>
-<h1>Sitemap</h1>
-<h2>ESP32 Projects</h2>
-<ul>
-  <li>
-    <a href="https://github.com/tapted/espbase/">espbase</a>
-    <p>
-      A C++26 base for ESP32 projects. MainLoop, task scheduling, logging, boot functions, network
-      logging, esp_err_t handling, RAII helpers, and more. Used in my other ESP32 projects.
-    </p>
-  </li>
-  <li>
-    <a href="https://github.com/tapted/espbase/tree/main/src/espbase/stack_json#stackjson-">StackJson</a>
-    <p>
-      Part of espbase. A C++26 JSON parser and serializer for ESP32. Uses a stack-based approach to
-      avoid heap allocations.
-    </p>
-  </li>
-  <li>
-    <a href="https://github.com/tapted/halpp/">halpp</a>
-    <p>
-      A modern, object-oriented C++ (C++26) Hardware Abstraction Layer designed specifically for the
-      ESP-IDF framework. Supports any dev board with an ESP32 chip, including ESP32-S3, ESP32-C6.
-      My take on "board support" libraries that don't involve copy-pasting vendor code all over the
-      place. Just declare a single `board.hpp` that declares your GPIO mapping. Includes network
-      management and drivers for passive buzzers, LED strips, segmented displays, sensors, and more.
-      Used in my other ESP32 projects. Uses LVGL.
-    </p>
-  </li>
-  <li>
-    <a href="https://github.com/tapted/happy/">HAPPY</a>
-    <p>
-      Home Assistant Plus Plus Your-way. It's ESPHome, but as a library, not a framework. Provides
-      various entities (sensors, switches, lights, etc.) that can be used in your own ESP32 that
-      interact with MQTT and Home Assistant. Includes OTA updates that can be triggered from an IDE
-      by pushing a "button" in MQTT / Home Assistant. Supports pushing system diagnostics to 
-      Home Assistant as well as any sensors you wire up. Used in my other ESP32 projects.
-    </p>
-  </li>
-  <li>
-    <a href="https://github.com/tapted/dongley/">Dongley</a>
-    <p>
-      I built an alarm clock. It has a 7-segment display, a buzzer, and a light sensor. Any number
-      of alarms can be set and the buzzer plays nice tunes. There's also a temperature sensor
-      because why not. It can be controlled via Home Assistant. ESP32-S3.
-    </p>
-  </li>
-  <li>
-    <a href="https://github.com/tapted/screenie/">Screenie</a>
-    <p>
-      A project for the <a href="https://www.waveshare.com/esp32-c6-lcd-1.47.htm"
-      >WaveShare ESP32-C6 LCD 1.47</a>. Haven't figured out what do to with it yet. But it uses
-      espbase, halpp, and happy. ESP32-C6.
-    </p>
-  </li>
-  <li>
-    <a href="https://github.com/tapted/espuck/">espuck</a>
-    <p>
-      A meshed ESP32 puck that can be used for various things. Mainly as a companion device for
-      playing IRL boardgames. E.g., tracking turns, scores, and other game state. Includes a poker
-      chip tracker for texas holdem. Uses the <a href="https://www.waveshare.com/esp32-s3-touch-lcd-1.85c.htm"
-      >WaveShare ESP32-S3 Touch LCD 1.85C</a>. Private repo until I figure out if this is worth
-      sharing. Flash updates are at <a href="./espuck/">espuck/</a>.
-    </p>
-  </li>
-</ul>
-<h2>Toy Web Projects</h2>
-<ul>
-  <li>
-    <a href="colourgrid/">colourgrid/</a>
-    <p>
-      A "pixel" grid drawing game my kids like.
-    </p>
-  </li>
-  <li>
-    <a href="emicon/">emicon/</a>
-    <p>
-      Turns emoji into app icons.
-    </p>
-  </li>
-  <li>
-    <a href="feedme/">feedme/</a>
-    <p>
-      A firebase app (PWA) we used to track feeds for our twins when they were newborn.
-    </p>
-  </li>
-  <li>
-    <a href="polygon/">polygon/</a>
-    <a class="src" href="https://codepen.io/tapted/pen/MWxPOxO">codepen</a>
-    <p>
-      My 5-year old wanted to print polygons to cut out. We made this.
-    </p>
-  </li>
-  <li>
-    <a href="words/">words/</a>
-    <p>
-      A PWA. Uses emoji and TTS to help kids learn words.
-    </p>
-</ul>
-<h2>Browser testing</h2>
-<ul>
-  <li><a href="choose/">choose/</a></li>
-</ul>
+  <h1>Trent's Projects</h1>
+
+  <h2>
+    <!-- Hardware / Microchip SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+    </svg>
+    ESP32 Projects
+  </h2>
+  <ul class="project-grid">
+    <li class="project-card">
+      <div class="project-title"><a href="https://github.com/tapted/espbase/">espbase</a></div>
+      <p>A C++26 base for ESP32 projects. MainLoop, task scheduling, logging, boot functions, network logging, esp_err_t handling, RAII helpers, and more. Used in my other ESP32 projects.</p>
+    </li>
+    
+    <li class="project-card">
+      <div class="project-title"><a href="https://github.com/tapted/espbase/tree/main/src/espbase/stack_json#stackjson-">StackJson</a></div>
+      <p>Part of espbase. A C++26 JSON parser and serializer for ESP32. Uses a stack-based approach to avoid heap allocations.</p>
+    </li>
+
+    <li class="project-card">
+      <div class="project-title"><a href="https://github.com/tapted/halpp/">halpp</a></div>
+      <p>A modern, object-oriented C++ (C++26) Hardware Abstraction Layer designed specifically for the ESP-IDF framework. Supports any dev board with an ESP32 chip, including ESP32-S3, ESP32-C6. My take on "board support" libraries that don't involve copy-pasting vendor code all over the place. Just declare a single `board.hpp` that declares your GPIO mapping. Includes network management and drivers for passive buzzers, LED strips, segmented displays, sensors, and more. Used in my other ESP32 projects. Uses LVGL.</p>
+    </li>
+
+    <li class="project-card">
+      <div class="project-title"><a href="https://github.com/tapted/happy/">HAPPY</a></div>
+      <p>Home Assistant Plus Plus Your-way. It's ESPHome, but as a library, not a framework. Provides various entities (sensors, switches, lights, etc.) that can be used in your own ESP32 that interact with MQTT and Home Assistant. Includes OTA updates that can be triggered from an IDE by pushing a "button" in MQTT / Home Assistant. Supports pushing system diagnostics to Home Assistant as well as any sensors you wire up. Used in my other ESP32 projects.</p>
+    </li>
+
+    <li class="project-card">
+      <div class="project-title"><a href="https://github.com/tapted/dongley/">Dongley</a></div>
+      <p>I built an alarm clock. It has a 7-segment display, a buzzer, and a light sensor. Any number of alarms can be set and the buzzer plays nice tunes. There's also a temperature sensor because why not. It can be controlled via Home Assistant. ESP32-S3.</p>
+    </li>
+
+    <li class="project-card">
+      <div class="project-title"><a href="https://github.com/tapted/screenie/">Screenie</a></div>
+      <p>A project for the <a href="https://www.waveshare.com/esp32-c6-lcd-1.47.htm">WaveShare ESP32-C6 LCD 1.47</a>. Haven't figured out what do to with it yet. But it uses espbase, halpp, and happy. ESP32-C6.</p>
+    </li>
+
+    <li class="project-card">
+      <div class="project-title"><a href="https://github.com/tapted/espuck/">espuck</a></div>
+      <p>A meshed ESP32 puck that can be used for various things. Mainly as a companion device for playing IRL boardgames. E.g., tracking turns, scores, and other game state. Includes a poker chip tracker for texas holdem. Uses the <a href="https://www.waveshare.com/esp32-s3-touch-lcd-1.85c.htm">WaveShare ESP32-S3 Touch LCD 1.85C</a>. Private repo until I figure out if this is worth sharing.</p>
+      <div class="project-links">
+        <a href="./espuck/">Flash Updates</a>
+      </div>
+    </li>
+  </ul>
+
+  <h2>
+    <!-- Web / Browser SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+    </svg>
+    Toy Web Projects
+  </h2>
+  <ul class="project-grid">
+    <li class="project-card">
+      <div class="project-title"><a href="colourgrid/">colourgrid/</a></div>
+      <p>A "pixel" grid drawing game my kids like.</p>
+    </li>
+    
+    <li class="project-card">
+      <div class="project-title"><a href="emicon/">emicon/</a></div>
+      <p>Turns emoji into app icons.</p>
+    </li>
+
+    <li class="project-card">
+      <div class="project-title"><a href="feedme/">feedme/</a></div>
+      <p>A firebase app (PWA) we used to track feeds for our twins when they were newborn.</p>
+    </li>
+
+    <li class="project-card">
+      <div class="project-title"><a href="polygon/">polygon/</a></div>
+      <p>My 5-year old wanted to print polygons to cut out. We made this.</p>
+      <div class="project-links">
+        <a class="src" href="https://codepen.io/tapted/pen/MWxPOxO">View on CodePen</a>
+      </div>
+    </li>
+
+    <li class="project-card">
+      <div class="project-title"><a href="words/">words/</a></div>
+      <p>A PWA. Uses emoji and TTS to help kids learn words.</p>
+    </li>
+  </ul>
+
+  <h2>
+    <!-- Beaker / Testing SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+    </svg>
+    Browser Testing
+  </h2>
+  <ul class="project-grid">
+    <li class="project-card">
+      <div class="project-title"><a href="choose/">choose/</a></div>
+      <p>Test utilities and browser experiments.</p>
+    </li>
+  </ul>
+
 </main>
+
 <footer>
-<a href="https://github.com/tapted/tapted.github.io">View on github</a>.
+  <a href="https://github.com/tapted/tapted.github.io">View source on GitHub</a>
 </footer>
+
+</body>
+</html>
