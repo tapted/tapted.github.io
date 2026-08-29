@@ -14,7 +14,71 @@
 <title>Trent's github.io pages</title>
 <main>
 <h1>Sitemap</h1>
-<h2>Toy Projects</h2>
+<h2>ESP32 Projects</h2>
+<ul>
+  <li>
+    <a href="https://github.com/tapted/espbase/">espbase</a>
+    <p>
+      A C++26 base for ESP32 projects. MainLoop, task scheduling, logging, boot functions, network
+      logging, esp_err_t handling, RAII helpers, and more. Used in my other ESP32 projects.
+    </p>
+  </li>
+  <li>
+    <a href="https://github.com/tapted/espbase/tree/main/src/espbase/stack_json#stackjson-">StackJson</a>
+    <p>
+      Part of espbase. A C++26 JSON parser and serializer for ESP32. Uses a stack-based approach to
+      avoid heap allocations.
+    </p>
+  </li>
+  <li>
+    <a href="https://github.com/tapted/halpp/">halpp</a>
+    <p>
+      A modern, object-oriented C++ (C++26) Hardware Abstraction Layer designed specifically for the
+      ESP-IDF framework. Supports any dev board with an ESP32 chip, including ESP32-S3, ESP32-C6.
+      My take on "board support" libraries that don't involve copy-pasting vendor code all over the
+      place. Just declare a single `board.hpp` that declares your GPIO mapping. Includes network
+      management and drivers for passive buzzers, LED strips, segmented displays, sensors, and more.
+      Used in my other ESP32 projects. Uses LVGL.
+    </p>
+  </li>
+  <li>
+    <a href="https://github.com/tapted/happy/">HAPPY</a>
+    <p>
+      Home Assistant Plus Plus Your-way. It's ESPHome, but as a library, not a framework. Provides
+      various entities (sensors, switches, lights, etc.) that can be used in your own ESP32 that
+      interact with MQTT and Home Assistant. Includes OTA updates that can be triggered from an IDE
+      by pushing a "button" in MQTT / Home Assistant. Supports pushing system diagnostics to 
+      Home Assistant as well as any sensors you wire up. Used in my other ESP32 projects.
+    </p>
+  </li>
+  <li>
+    <a href="https://github.com/tapted/dongley/">Dongley</a>
+    <p>
+      I built an alarm clock. It has a 7-segment display, a buzzer, and a light sensor. Any number
+      of alarms can be set and the buzzer plays nice tunes. There's also a temperature sensor
+      because why not. It can be controlled via Home Assistant. ESP32-S3.
+    </p>
+  </li>
+  <li>
+    <a href="https://github.com/tapted/screenie/">Screenie</a>
+    <p>
+      A project for the <a href="https://www.waveshare.com/esp32-c6-lcd-1.47.htm"
+      >WaveShare ESP32-C6 LCD 1.47</a>. Haven't figured out what do to with it yet. But it uses
+      espbase, halpp, and happy. ESP32-C6.
+    </p>
+  </li>
+  <li>
+    <a href="https://github.com/tapted/espuck/">espuck</a>
+    <p>
+      A meshed ESP32 puck that can be used for various things. Mainly as a companion device for
+      playing IRL boardgames. E.g., tracking turns, scores, and other game state. Includes a poker
+      chip tracker for texas holdem. Uses the <a href="https://www.waveshare.com/esp32-s3-touch-lcd-1.85c.htm"
+      >WaveShare ESP32-S3 Touch LCD 1.85C</a>. Private repo until I figure out if this is worth
+      sharing. Flash updates are at <a href="./espuck/">espuck/</a>.
+    </p>
+  </li>
+</ul>
+<h2>Toy Web Projects</h2>
 <ul>
   <li>
     <a href="colourgrid/">colourgrid/</a>
