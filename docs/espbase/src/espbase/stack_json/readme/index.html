@@ -1,0 +1,1196 @@
+<!doctype html>
+<html
+  lang="en"
+  dir="ltr"
+  class="scroll-smooth"
+  data-default-appearance="light"
+  data-auto-appearance="true"><head>
+  <meta charset="utf-8">
+  
+    <meta http-equiv="content-language" content="en">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color">
+
+  
+  
+    <title>StackJson &middot; espbase Documentation</title>
+    <meta name="title" content="StackJson &middot; espbase Documentation">
+  
+
+  
+  
+  
+  
+  
+    
+  
+    
+  
+    
+  
+  
+  
+  
+  
+  <link rel="canonical" href="https://tapted.github.io/docs/espbase/src/espbase/stack_json/readme/">
+  
+  
+
+  
+  
+    <meta name="author" content="Trent Apted">
+  
+  
+
+  
+  <meta property="og:url" content="https://tapted.github.io/docs/espbase/src/espbase/stack_json/readme/">
+	<meta property="og:site_name" content="espbase Documentation">
+	<meta property="og:title" content="StackJson">
+	<meta property="og:locale" content="en">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="src">
+		<meta property="article:published_time" content="2026-08-30T00:00:00+00:00">
+		<meta property="article:modified_time" content="2026-08-30T00:00:00+00:00">
+
+  
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="StackJson">
+
+  
+  
+  
+  
+    
+      
+    
+  
+    
+      
+    
+  
+    
+      
+    
+  
+  
+    
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+    
+  
+  
+  <link
+    type="text/css"
+    rel="stylesheet"
+    href="/docs/espbase/css/main.bundle.min.7970093858b987578845d5db7f6c5eb66dfbcab1b9a036a94da3aca1b995ee40a874fab968b4ae35eaac752afd212c1004ab2dcca8d7b41a6595abd67f28ebce.css"
+    integrity="sha512-eXAJOFi5h1eIRdXbf2xetm37yrG5oDapTaOsobmV7kCodPq5aLSuNeqsdSr9ISwQBKstzKjXtBpllavWfyjrzg==">
+
+  
+  
+  <script
+    type="text/javascript"
+    src="/docs/espbase/js/appearance.min.764f412f07ea715415e9123a5eb5f355429502d0b760146b9bcab854bc50829dee14488594acd935dfcdc6a0fe7e6d14d7bee914ebb9272b251aa238cb52c4dd.js"
+    integrity="sha512-dk9BLwfqcVQV6RI6XrXzVUKVAtC3YBRrm8q4VLxQgp3uFEiFlKzZNd/NxqD&#43;fm0U177pFOu5JyslGqI4y1LE3Q=="></script>
+  
+
+
+  
+  
+  
+  
+  
+  
+    
+    <script defer src="/docs/espbase/lib/zoom/zoom.min.umd.a527109b68c082a70f3697716dd72a9d5aa8b545cf800cecbbc7399f2ca6f6e0ce3e431f2062b48bbfa47c9ea42822714060bef309be073f49b9c0e30d318d7b.js" integrity="sha512-pScQm2jAgqcPNpdxbdcqnVqotUXPgAzsu8c5nyym9uDOPkMfIGK0i7&#43;kfJ6kKCJxQGC&#43;8wm&#43;Bz9JucDjDTGNew=="></script>
+    
+    <script defer src="/docs/espbase/js/medium-zoom.67b71ecf7eecce38673a92244d1ffd93edb5f1aeedd12e725d0f67fe901828fa3562f6a6d64ad290b36b7d7034b8ea16e63486d75d957bcf6a2732923e5d46e6.js" integrity="sha512-Z7cez37szjhnOpIkTR/9k&#43;218a7t0S5yXQ9n/pAYKPo1Yvam1krSkLNrfXA0uOoW5jSG112Ve89qJzKSPl1G5g=="></script>
+  
+  
+  
+  
+
+  
+  
+  
+    
+  
+  
+  
+    
+  
+  
+  
+  
+  
+  
+  
+    
+    <script
+      defer
+      type="text/javascript"
+      id="script-bundle"
+      src="/docs/espbase/js/main.bundle.min.576acb12ee5b79e135854532cd8aa5b022cdd1ba0757128b9b7a6ec6e9e31dd18b33b2b577865a1486981fc85aa2073e960794d8e5c82ffb3f72e3cf00560df8.js"
+      integrity="sha512-V2rLEu5beeE1hUUyzYqlsCLN0boHVxKLm3puxunjHdGLM7K1d4ZaFIaYH8haogc&#43;lgeU2OXIL/s/cuPPAFYN&#43;A=="
+      data-copy="Copy"
+      data-copied="Copied"></script>
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <link rel="apple-touch-icon" sizes="180x180" href="/docs/espbase/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/docs/espbase/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/docs/espbase/favicon-16x16.png">
+    <link rel="manifest" href="/docs/espbase/site.webmanifest">
+  
+
+  
+  <script type="application/ld+json">
+  [{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "articleSection": "Srcs",
+    "name": "StackJson",
+    "headline": "StackJson",
+    
+    "inLanguage": "en",
+    "url" : "https://tapted.github.io/docs/espbase/src/espbase/stack_json/readme/",
+    "author" : {
+      "@type": "Person",
+      "name": "Trent Apted"
+    },
+    "copyrightYear": "2026",
+    "dateCreated": "2026-08-30T00:00:00\u002b00:00",
+    "datePublished": "2026-08-30T00:00:00\u002b00:00",
+    
+    "dateModified": "2026-08-30T00:00:00\u002b00:00",
+    
+    
+    
+    "mainEntityOfPage": "https://tapted.github.io/docs/espbase/src/espbase/stack_json/readme/",
+    "wordCount":  2362 
+  }]
+  </script>
+
+
+
+  
+  
+    
+
+
+
+
+  
+
+  
+  
+
+  
+  
+
+  
+  
+</head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <body class="flex flex-col h-screen m-auto leading-7 max-w-7xl px-6 sm:px-14 md:px-24 lg:px-32 text-lg bg-neutral text-neutral-900 dark:bg-neutral-800 dark:text-neutral ">
+    <div id="the-top" class="absolute flex self-center">
+      <a
+        class="px-3 py-1 text-sm -translate-y-8 rounded-b-lg bg-primary-200 focus:translate-y-0 dark:bg-neutral-600"
+        href="#main-content">
+        <span class="font-bold text-primary-600 pe-2 dark:text-primary-400">&darr;</span>
+        Skip to main content
+      </a>
+    </div>
+    <header>
+      
+      
+        <div class="main-menu flex items-center w-full gap-2 p-1 pl-0">
+  
+  
+    <a href="/docs/espbase/" class="text-base font-medium truncate min-w-0 shrink">
+      espbase Documentation
+    </a>
+  
+  <div class="flex items-center ms-auto">
+    <div class="hidden md:flex">
+      <nav aria-label="Main menu" class="flex items-center gap-x-5 h-12">
+  
+
+  
+
+  
+
+  
+    <div class="flex items-center">
+      <button
+        id="appearance-switcher"
+        aria-label="Switch to dark appearance"
+        type="button"
+        class="text-sm bf-icon-color-hover"
+        title="Switch to dark appearance">
+        <div class="flex items-center justify-center dark:hidden">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+        </div>
+        <div class="items-center justify-center hidden dark:flex">
+          <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+        </div>
+      </button>
+    </div>
+  
+
+  
+</nav>
+
+
+
+    </div>
+    <div class="flex md:hidden">
+      
+<div class="mobile-header-row relative flex items-center h-14 gap-4">
+  
+
+  
+    <button
+      id="appearance-switcher-mobile"
+      type="button"
+      aria-label="Switch to dark appearance"
+      title="Switch to dark appearance"
+      class="flex items-center justify-center text-neutral-900 hover:text-primary-600 dark:text-neutral-200 dark:hover:text-primary-400">
+      <div class="dark:hidden">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg>
+</span>
+      </div>
+      <div class="hidden dark:block">
+        <span class="relative block icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 159.1c-53.02 0-95.1 42.98-95.1 95.1S202.1 351.1 256 351.1s95.1-42.98 95.1-95.1S309 159.1 256 159.1zM509.3 347L446.1 255.1l63.15-91.01c6.332-9.125 1.104-21.74-9.826-23.72l-109-19.7l-19.7-109c-1.975-10.93-14.59-16.16-23.72-9.824L256 65.89L164.1 2.736c-9.125-6.332-21.74-1.107-23.72 9.824L121.6 121.6L12.56 141.3C1.633 143.2-3.596 155.9 2.736 164.1L65.89 256l-63.15 91.01c-6.332 9.125-1.105 21.74 9.824 23.72l109 19.7l19.7 109c1.975 10.93 14.59 16.16 23.72 9.824L256 446.1l91.01 63.15c9.127 6.334 21.75 1.107 23.72-9.822l19.7-109l109-19.7C510.4 368.8 515.6 356.1 509.3 347zM256 383.1c-70.69 0-127.1-57.31-127.1-127.1c0-70.69 57.31-127.1 127.1-127.1s127.1 57.3 127.1 127.1C383.1 326.7 326.7 383.1 256 383.1z"/></svg>
+</span>
+      </div>
+    </button>
+  
+
+  
+
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+      
+    </header>
+    <div class="relative flex flex-col grow">
+      <main id="main-content" class="grow">
+        
+  
+  
+  
+  
+  <article>
+    
+    
+
+    
+    <header id="single_header" class="mt-5 max-w-prose">
+      
+      <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+        StackJson
+      </h1>
+      <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
+        
+
+
+
+
+
+  
+  
+
+
+
+  
+
+  
+  
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+  <div class="flex flex-row flex-wrap items-center">
+    
+    
+
+    
+    
+  </div>
+
+  
+
+  
+  
+
+
+      </div>
+      
+        
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+  
+
+      
+    </header>
+
+    
+    <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+      
+      
+      
+      
+      
+
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+
+        <div class="article-content max-w-prose mb-20">
+          
+<h1 class="relative group">StackJson 🧱
+    <div id="stackjson-" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#stackjson-" aria-label="Anchor">#</a>
+    </span>
+    
+</h1>
+<p><strong>A zero-heap, zero-copy, strictly-typed C++26 JSON library for deeply constrained systems.</strong></p>
+<p>StackJson was built for environments where dynamic memory allocation is a liability—like generating complex MQTT discovery payloads on an ESP32 or parsing deeply nested configuration data inside an RTOS task.</p>
+<p>Instead of allocating a DOM (Document Object Model) on the heap, StackJson uses C++26 template metaprogramming to build a declarative graph of references on your call stack. It computes maximum stack depth requirements at compile time, safely handles Unicode, and achieves perfect zero-copy composition.</p>
+<hr>
+
+<h2 class="relative group">⚡ Motivation
+    <div id="-motivation" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-motivation" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>Modern C++ JSON libraries (like <code>nlohmann::json</code> or <code>ArduinoJson</code>) are fantastic, but they rely on dynamic memory. On microcontrollers, constantly allocating and freeing JSON objects leads to memory fragmentation, heap exhaustion, and eventually, a hard crash.</p>
+<p>StackJson flips the model:</p>
+<ol>
+<li><strong>You own the memory:</strong> All data lives in your local variables.</li>
+<li><strong>The compiler does the work:</strong> Stack depths and node relationships are computed at compile time.</li>
+<li><strong>Zero copies:</strong> Documents capture your variables by reference using perfect forwarding. Update your variables <em>after</em> building the document, and the emitted JSON reflects the live changes.</li>
+</ol>
+<hr>
+
+<h2 class="relative group">🛠️ Usage Examples: Generation
+    <div id="-usage-examples-generation" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-usage-examples-generation" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>StackJson allows you to declaratively build JSON payloads that mirror the final output structure. See <a href="/docs/espbase/src/espbase/stack_json/migrating_from_arduino_json/" >Migrating from ArduinoJson to StackJson</a> for a side-by-side comparison.</p>
+
+<h3 class="relative group">The Basics
+    <div id="the-basics" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-basics" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>Paths can be defined inline or stored as variables for clean grouping.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&#34;espbase/stack_json/json.hpp&#34;</span><span class="cp">
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">using</span> <span class="k">namespace</span> <span class="n">sjson</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">battery</span> <span class="o">=</span> <span class="mi">98</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">auto</span> <span class="n">device</span> <span class="o">=</span> <span class="n">path</span><span class="p">(</span><span class="s">&#34;device&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">auto</span> <span class="n">doc</span> <span class="o">=</span> <span class="n">stack_json</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">node</span><span class="p">(</span><span class="s">&#34;name&#34;</span><span class="p">,</span> <span class="s">&#34;espuck_node_01&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">node</span><span class="p">(</span><span class="n">device</span><span class="p">(</span><span class="s">&#34;manufacturer&#34;</span><span class="p">),</span> <span class="s">&#34;espuck&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="n">node</span><span class="p">(</span><span class="n">device</span><span class="p">(</span><span class="s">&#34;power&#34;</span><span class="p">,</span> <span class="s">&#34;battery&#34;</span><span class="p">),</span> <span class="n">battery</span><span class="p">),</span> <span class="c1">// Deeply nested path
+</span></span></span><span class="line"><span class="cl">        <span class="n">node</span><span class="p">(</span><span class="n">device</span><span class="p">(</span><span class="s">&#34;online&#34;</span><span class="p">),</span> <span class="nb">true</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">StackBuffer</span><span class="o">&lt;</span><span class="mi">256</span><span class="o">&gt;</span> <span class="n">buffer</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">doc</span><span class="p">.</span><span class="n">emit</span><span class="p">(</span><span class="n">buffer</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1">// buffer.c_str() now contains a null-terminated JSON string!
+</span></span></span><span class="line"><span class="cl">    <span class="c1">// {&#34;name&#34;:&#34;espuck_node_01&#34;,&#34;device&#34;:{&#34;manufacturer&#34;:&#34;espuck&#34;,&#34;power&#34;:{&#34;battery&#34;:98},&#34;online&#34;:true}}
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div>
+
+<h3 class="relative group">Conditional Nodes
+    <div id="conditional-nodes" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#conditional-nodes" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>Need to omit keys if they aren&rsquo;t configured? Use <code>node_if</code>. If the condition is false, the key is completely excluded from the output.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">btn_doc</span> <span class="o">=</span> <span class="n">stack_json</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">node</span><span class="p">(</span><span class="s">&#34;command_topic&#34;</span><span class="p">,</span> <span class="s">&#34;home/cmd&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// conditional =&gt; nulls can be output
+</span></span></span><span class="line"><span class="cl">    <span class="n">node_if</span><span class="p">(</span><span class="n">config</span><span class="p">.</span><span class="n">has_icon</span><span class="p">,</span> <span class="s">&#34;icon&#34;</span><span class="p">,</span> <span class="n">config</span><span class="p">.</span><span class="n">icon</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// no conditional =&gt; nulls drop implicitly
+</span></span></span><span class="line"><span class="cl">    <span class="n">node_if</span><span class="p">(</span><span class="s">&#34;entity_category&#34;</span><span class="p">,</span> <span class="n">config</span><span class="p">.</span><span class="n">category</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span></span></span></code></pre></div></div>
+
+<h3 class="relative group">Arrays and Spans
+    <div id="arrays-and-spans" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#arrays-and-spans" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>StackJson handles arrays of primitive types, nested objects, or even runtime spans.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="c1">// Compile-time arrays
+</span></span></span><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">capabilities</span> <span class="o">=</span> <span class="n">stack_array</span><span class="p">(</span><span class="s">&#34;wifi&#34;</span><span class="p">,</span> <span class="s">&#34;ble&#34;</span><span class="p">,</span> <span class="s">&#34;touch&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Runtime arrays (wraps a std::span without allocating!)
+</span></span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">raw_temps</span><span class="p">[]</span> <span class="o">=</span> <span class="p">{</span><span class="mi">18</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">22</span><span class="p">,</span> <span class="mi">24</span><span class="p">};</span>
+</span></span><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">span</span><span class="o">&lt;</span><span class="kt">int</span><span class="o">&gt;</span> <span class="n">temps</span><span class="p">(</span><span class="n">raw_temps</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">doc</span> <span class="o">=</span> <span class="n">stack_json</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">node</span><span class="p">(</span><span class="s">&#34;features&#34;</span><span class="p">,</span> <span class="n">capabilities</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">node</span><span class="p">(</span><span class="s">&#34;supported_temps&#34;</span><span class="p">,</span> <span class="n">span_array</span><span class="p">(</span><span class="n">temps</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span></span></span></code></pre></div></div>
+
+<h3 class="relative group">Zero-Copy Composition (Perfect Forwarding)
+    <div id="zero-copy-composition-perfect-forwarding" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#zero-copy-composition-perfect-forwarding" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>Because StackJson uses perfect forwarding, assembling a master document from smaller components consumes almost no stack space. The master document simply holds references to the local components.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">wifi_doc</span> <span class="o">=</span> <span class="n">stack_json</span><span class="p">(</span><span class="n">node</span><span class="p">(</span><span class="s">&#34;ip&#34;</span><span class="p">,</span> <span class="s">&#34;192.168.1.50&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">ble_doc</span> <span class="o">=</span> <span class="n">stack_json</span><span class="p">(</span><span class="n">node</span><span class="p">(</span><span class="s">&#34;mac&#34;</span><span class="p">,</span> <span class="s">&#34;AA:BB:CC:DD:EE&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Outer document captures the inner documents by reference!
+</span></span></span><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">root_doc</span> <span class="o">=</span> <span class="n">stack_json</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">node</span><span class="p">(</span><span class="s">&#34;wifi&#34;</span><span class="p">,</span> <span class="n">wifi_doc</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">node</span><span class="p">(</span><span class="s">&#34;bluetooth&#34;</span><span class="p">,</span> <span class="n">ble_doc</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span></span></span></code></pre></div></div>
+
+<h3 class="relative group">In-Place String Formatting (Printf Callback)
+    <div id="in-place-string-formatting-printf-callback" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#in-place-string-formatting-printf-callback" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>When generating dynamic strings like MQTT topics or unique IDs, you usually have to waste stack space on temporary buffers (<code>char topic_buf[128]</code>) and call <code>snprintf</code>.</p>
+<p>StackJson eliminates this by accepting a lambda function. It exposes a <code>printf</code>-compatible formatter that writes <em>directly</em> into the unused tail of the <code>OutputBuffer</code>. It even applies JSON escaping in-place using a highly optimized backwards-expansion algorithm—meaning zero intermediate buffers and no <code>std::memmove</code>.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">device_prefix</span> <span class="o">=</span> <span class="s">&#34;espuck&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">const</span> <span class="kt">char</span><span class="o">*</span> <span class="n">sensor_type</span> <span class="o">=</span> <span class="s">&#34;temperature&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">doc</span> <span class="o">=</span> <span class="n">stack_json</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">node</span><span class="p">(</span><span class="s">&#34;name&#34;</span><span class="p">,</span> <span class="s">&#34;Kitchen Temp&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1">// Formats directly into the final JSON payload safely!
+</span></span></span><span class="line"><span class="cl">    <span class="n">node</span><span class="p">(</span><span class="s">&#34;state_topic&#34;</span><span class="p">,</span> <span class="p">[</span><span class="o">&amp;</span><span class="p">](</span><span class="k">auto</span><span class="o">&amp;</span> <span class="n">print</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">print</span><span class="p">(</span><span class="s">&#34;homeassistant/sensor/%s_%s/state&#34;</span><span class="p">,</span> <span class="n">device_prefix</span><span class="p">,</span> <span class="n">sensor_type</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}),</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1">// Fully supports automatic JSON escaping of your formatted output
+</span></span></span><span class="line"><span class="cl">    <span class="n">node</span><span class="p">(</span><span class="s">&#34;chaotic_text&#34;</span><span class="p">,</span> <span class="p">[</span><span class="o">&amp;</span><span class="p">](</span><span class="k">auto</span><span class="o">&amp;</span> <span class="n">print</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">print</span><span class="p">(</span><span class="s">&#34;Line 1</span><span class="se">\n</span><span class="s">Line 2 with </span><span class="se">\&#34;</span><span class="s">quotes</span><span class="se">\&#34;</span><span class="s">&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">print</span><span class="p">(</span><span class="s">&#34; print again - it will get appended&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span></span></span></code></pre></div></div>
+
+<h3 class="relative group">The Non-Templated Builder
+    <div id="the-non-templated-builder" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-non-templated-builder" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>Need to pass documents across function boundaries or virtual methods? Use <code>StackBuilder</code> to escape the template matrix and merge documents safely on the stack.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="kt">void</span> <span class="n">Entity</span><span class="o">::</span><span class="n">inject_into</span><span class="p">(</span><span class="n">Buffer</span><span class="o">&amp;</span> <span class="n">buffer</span><span class="p">,</span> <span class="n">BuilderBase</span><span class="o">&amp;</span> <span class="n">builder</span><span class="p">)</span> <span class="k">const</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">auto</span> <span class="n">base_doc</span> <span class="o">=</span> <span class="n">stack_json</span><span class="p">(</span><span class="n">node</span><span class="p">(</span><span class="s">&#34;unique_id&#34;</span><span class="p">,</span> <span class="k">this</span><span class="o">-&gt;</span><span class="n">id</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">builder</span><span class="p">.</span><span class="n">add</span><span class="p">(</span><span class="n">base_doc</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">builder</span><span class="p">.</span><span class="n">emit</span><span class="p">(</span><span class="n">buffer</span><span class="p">);</span> <span class="c1">// Evaluates all collected documents and writes!
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// In the caller:
+</span></span></span><span class="line"><span class="cl"><span class="c1">// Space for up to 32 keys (just pointers on the stack).
+</span></span></span><span class="line"><span class="cl"><span class="n">StackBuilder</span><span class="o">&lt;</span><span class="mi">32</span><span class="o">&gt;</span> <span class="n">builder</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">inject_into</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">builder</span><span class="p">);</span></span></span></code></pre></div></div>
+
+<h3 class="relative group">Pretty Printing (Opt-In &amp; Decoupled)
+    <div id="pretty-printing-opt-in--decoupled" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#pretty-printing-opt-in--decoupled" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>Formatting JSON with newlines and spaces is essential for debugging, but it wastes binary size if forced. StackJson handles this via the <strong>Decorator Pattern</strong>. You simply wrap your buffer in a <code>PrettyBuffer</code>.</p>
+<p>Because it&rsquo;s completely decoupled from the generation tree, if you don&rsquo;t use it, the compiler&rsquo;s dead-code elimination (DCE) strips it out entirely!</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">StackBuffer</span><span class="o">&lt;</span><span class="mi">256</span><span class="o">&gt;</span> <span class="n">raw_buffer</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">PrettyBuffer</span> <span class="nf">pretty</span><span class="p">(</span><span class="n">raw_buffer</span><span class="p">,</span> <span class="mi">2</span><span class="p">);</span> <span class="c1">// 2 spaces per indent
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">doc</span><span class="p">.</span><span class="n">emit</span><span class="p">(</span><span class="n">pretty</span><span class="p">);</span> 
+</span></span><span class="line"><span class="cl"><span class="c1">// Emits fully formatted JSON directly into raw_buffer
+</span></span></span></code></pre></div></div>
+
+<h3 class="relative group">Dynamic Buffers (Heap / PSRAM Support)
+    <div id="dynamic-buffers-heap--psram-support" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#dynamic-buffers-heap--psram-support" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>When generating massive JSON documents (like Home Assistant MQTT discovery payloads) that exceed your RTOS stack limits, you can use <code>DynamicBuffer</code>.</p>
+<p><code>DynamicBuffer</code> implements the <code>OutputBuffer</code> interface but backs it with a dynamically growing standard library container. It is fully template-decoupled: it works out-of-the-box with <code>std::vector&lt;char&gt;</code>, but you can easily substitute a custom STL allocator to route memory to an ESP32&rsquo;s SPIRAM/PSRAM.</p>
+<p>It also automatically maintains a &ldquo;watermark&rdquo; capacity (<code>ExpandSize</code>, defaulting to 256 bytes) at the end of the buffer to guarantee there is always contiguous space available for your zero-copy <code>printf</code> callbacks, without causing out-of-bounds errors.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Default routes to ESP32 PSRAM using a custom STL allocator!
+</span></span></span><span class="line"><span class="cl"><span class="n">DynamicBuffer</span><span class="o">&lt;&gt;</span> <span class="n">psram_buffer</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Or use standard heap allocation...
+</span></span></span><span class="line"><span class="cl"><span class="n">DynamicBuffer</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">vector</span><span class="o">&lt;</span><span class="kt">char</span><span class="o">&gt;&gt;</span> <span class="n">heap_buffer</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">doc</span> <span class="o">=</span> <span class="n">stack_json</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">node</span><span class="p">(</span><span class="s">&#34;device_class&#34;</span><span class="p">,</span> <span class="s">&#34;temperature&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">node</span><span class="p">(</span><span class="s">&#34;state_topic&#34;</span><span class="p">,</span> <span class="p">[</span><span class="o">&amp;</span><span class="p">](</span><span class="k">auto</span><span class="o">&amp;</span> <span class="n">print</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// The buffer guarantees at least 256 bytes are ready for this expansion,
+</span></span></span><span class="line"><span class="cl">        <span class="c1">// automatically resizing the underlying vector if necessary.
+</span></span></span><span class="line"><span class="cl">        <span class="n">print</span><span class="p">(</span><span class="s">&#34;home/sensor/%s&#34;</span><span class="p">,</span> <span class="n">config</span><span class="p">.</span><span class="n">identifier</span><span class="p">);</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">})</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">doc</span><span class="p">.</span><span class="n">emit</span><span class="p">(</span><span class="n">psram_buffer</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// c_str() safely null-terminates and returns a pointer to the vector&#39;s memory
+</span></span></span><span class="line"><span class="cl"><span class="n">mqtt_client</span><span class="p">.</span><span class="n">publish</span><span class="p">(</span><span class="n">psram_buffer</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span></span></span></code></pre></div></div>
+<hr>
+
+<h2 class="relative group">🔍 Usage Examples: Parsing
+    <div id="-usage-examples-parsing" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-usage-examples-parsing" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+<p>StackJson&rsquo;s parser is a zero-allocation SAX engine. You bind your local variables to expected JSON paths, and the parser drops the values right into your variables as it scans.</p>
+
+<h3 class="relative group">Type Coercion and Binding
+    <div id="type-coercion-and-binding" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#type-coercion-and-binding" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">string_view</span> <span class="n">json</span> <span class="o">=</span> <span class="n">R</span><span class="s">&#34;({&#34;</span><span class="n">state</span><span class="s">&#34;: &#34;</span><span class="n">ON</span><span class="s">&#34;, &#34;</span><span class="n">brightness</span><span class="s">&#34;: &#34;</span><span class="mi">50</span><span class="s">&#34;})&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">string_view</span> <span class="n">state</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">brightness</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="c1">// The parser will auto-convert the string &#34;50&#34; to an int!
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">json_parser</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">bind</span><span class="p">(</span><span class="s">&#34;state&#34;</span><span class="p">,</span> <span class="n">state</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">bind</span><span class="p">(</span><span class="s">&#34;brightness&#34;</span><span class="p">,</span> <span class="n">brightness</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">parser</span><span class="p">.</span><span class="n">parse</span><span class="p">(</span><span class="n">json</span><span class="p">);</span></span></span></code></pre></div></div>
+
+<h3 class="relative group">Relaxed Parsing (JSONC, Comments &amp; Commas)
+    <div id="relaxed-parsing-jsonc-comments--commas" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#relaxed-parsing-jsonc-comments--commas" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>IoT config files are often written by humans. StackJson&rsquo;s parser acts like a forgiving JSON5/JSONC engine out of the box. It natively ignores trailing commas and gracefully skips <code>//</code> and <code>/* */</code> comments.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">string_view</span> <span class="n">json</span> <span class="o">=</span> <span class="n">R</span><span class="s">&#34;(</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Configure the main port
+</span></span></span><span class="line"><span class="cl">    <span class="s">&#34;port&#34;</span><span class="o">:</span> <span class="mi">8080</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">    <span class="s">&#34;history&#34;</span><span class="o">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,],</span> <span class="cm">/* Note the trailing commas! */</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span><span class="s">&#34;;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">port</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">json_parser</span><span class="p">(</span><span class="n">bind</span><span class="p">(</span><span class="s">&#34;port&#34;</span><span class="p">,</span> <span class="n">port</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="n">parser</span><span class="p">.</span><span class="n">parse</span><span class="p">(</span><span class="n">json</span><span class="p">);</span> <span class="c1">// Succeeds effortlessly
+</span></span></span></code></pre></div></div>
+
+<h3 class="relative group">Dynamic Nodes (Variant Parsing, Sub-Parsing &amp; Arrays)
+    <div id="dynamic-nodes-variant-parsing-sub-parsing--arrays" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#dynamic-nodes-variant-parsing-sub-parsing--arrays" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>Sometimes you don&rsquo;t know exactly what type a value will be, or you want to parse an array of unknown length. By calling <code>bind()</code> with only a path (no target variable), StackJson creates a <code>DynamicNode</code>.</p>
+<p>A <code>DynamicNode</code> captures the raw, zero-copy <code>std::string_view</code> of the matched JSON block (even full objects or arrays). You can then interrogate its state, extract its value, sub-parse it, or iterate over it.</p>
+
+<h4 class="relative group">1. Variant Extraction &amp; State Tracking
+    <div id="1-variant-extraction--state-tracking" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#1-variant-extraction--state-tracking" aria-label="Anchor">#</a>
+    </span>
+    
+</h4>
+<p>You can check if a node was present in the payload or explicitly set to <code>null</code> before deciding what to do with it.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">version</span> <span class="o">=</span> <span class="n">bind</span><span class="p">(</span><span class="s">&#34;version&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">image</span> <span class="o">=</span> <span class="n">bind</span><span class="p">(</span><span class="s">&#34;image&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">not_set</span> <span class="o">=</span> <span class="n">bind</span><span class="p">(</span><span class="s">&#34;not_set&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">json_parser</span><span class="p">(</span><span class="n">version</span><span class="p">,</span> <span class="n">image</span><span class="p">,</span> <span class="n">not_set</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">parser</span><span class="p">.</span><span class="n">parse</span><span class="p">(</span><span class="n">R</span><span class="s">&#34;({&#34;</span><span class="n">version</span><span class="s">&#34;: 11, &#34;</span><span class="n">image</span><span class="s">&#34;: &#34;</span><span class="n">foo</span><span class="p">.</span><span class="n">bin</span><span class="s">&#34;})&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">image</span><span class="p">.</span><span class="n">is_set</span><span class="p">()</span> <span class="o">&amp;&amp;</span> <span class="o">!</span><span class="n">image</span><span class="p">.</span><span class="n">is_null</span><span class="p">())</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">img</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">image</span> <span class="o">&gt;&gt;</span> <span class="n">img</span><span class="p">;</span> <span class="c1">// Auto-coerces the captured JSON into your variable
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">ver</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">version</span> <span class="o">&gt;&gt;</span> <span class="n">ver</span><span class="p">;</span> <span class="c1">// Evaluates to true and sets ver to 11
+</span></span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">missing</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">not_set</span> <span class="o">&gt;&gt;</span> <span class="n">missing</span><span class="p">;</span> <span class="c1">// Evaluates to false; missing remains untouched
+</span></span></span></code></pre></div></div>
+
+<h4 class="relative group">2. Sub-Parsing (Nested Objects)
+    <div id="2-sub-parsing-nested-objects" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#2-sub-parsing-nested-objects" aria-label="Anchor">#</a>
+    </span>
+    
+</h4>
+<p>If a JSON payload contains a complex nested object, a <code>DynamicNode</code> captures the entire block <code>{...}</code>. You can then spin up a child parser directly on that node to extract its internal fields.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">info</span> <span class="o">=</span> <span class="n">bind</span><span class="p">(</span><span class="n">path</span><span class="p">(</span><span class="s">&#34;project&#34;</span><span class="p">,</span> <span class="s">&#34;info&#34;</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">json_parser</span><span class="p">(</span><span class="n">info</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Captures the entire &#34;info&#34; object block
+</span></span></span><span class="line"><span class="cl"><span class="n">parser</span><span class="p">.</span><span class="n">parse</span><span class="p">(</span><span class="n">R</span><span class="s">&#34;({&#34;</span><span class="n">project</span><span class="s">&#34;: {&#34;</span><span class="n">info</span><span class="s">&#34;: {&#34;</span><span class="n">name</span><span class="s">&#34;: &#34;</span><span class="n">espuck</span><span class="s">&#34;, &#34;</span><span class="n">tags</span><span class="s">&#34;: 42}}})&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">name</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">tags</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// Sub-parse the captured block
+</span></span></span><span class="line"><span class="cl"><span class="n">info</span><span class="p">.</span><span class="n">parse</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">bind</span><span class="p">(</span><span class="s">&#34;name&#34;</span><span class="p">,</span> <span class="n">name</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">    <span class="n">bind</span><span class="p">(</span><span class="s">&#34;tags&#34;</span><span class="p">,</span> <span class="n">tags</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span></span></span></code></pre></div></div>
+
+<h4 class="relative group">3. Array Iteration
+    <div id="3-array-iteration" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#3-array-iteration" aria-label="Anchor">#</a>
+    </span>
+    
+</h4>
+<p><code>DynamicNode</code> natively supports array iteration. By using a <code>while(node &gt;&gt; target)</code> loop, it acts as a lightweight tokenizer, extracting one element at a time from the array.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">tags</span> <span class="o">=</span> <span class="n">bind</span><span class="p">(</span><span class="s">&#34;tags&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">json_parser</span><span class="p">(</span><span class="n">tags</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">parser</span><span class="p">.</span><span class="n">parse</span><span class="p">(</span><span class="n">R</span><span class="s">&#34;({&#34;</span><span class="n">tags</span><span class="s">&#34;: [&#34;</span><span class="n">wifi</span><span class="s">&#34;, &#34;</span><span class="n">ble</span><span class="s">&#34;, &#34;</span><span class="n">touch</span><span class="s">&#34;]})&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">tag</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="p">(</span><span class="n">tags</span> <span class="o">&gt;&gt;</span> <span class="n">tag</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// Loops 3 times, yielding &#34;wifi&#34;, &#34;ble&#34;, and &#34;touch&#34;
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div>
+
+<h4 class="relative group">4. Object Array Iteration (Zero-Copy!)
+    <div id="4-object-array-iteration-zero-copy" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#4-object-array-iteration-zero-copy" aria-label="Anchor">#</a>
+    </span>
+    
+</h4>
+<p>By combining array iteration with sub-parsing, you can easily parse arrays of objects without ever allocating a vector or loading the array into memory! Just stream the array elements into a <code>std::string_view</code> (which grabs the raw <code>{...}</code> text of the element), and sub-parse it.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">sensors</span> <span class="o">=</span> <span class="n">bind</span><span class="p">(</span><span class="s">&#34;sensors&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">json_parser</span><span class="p">(</span><span class="n">sensors</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">parser</span><span class="p">.</span><span class="n">parse</span><span class="p">(</span><span class="n">R</span><span class="s">&#34;({&#34;</span><span class="n">sensors</span><span class="s">&#34;: [{&#34;</span><span class="n">id</span><span class="s">&#34;: &#34;</span><span class="n">temp</span><span class="s">&#34;, &#34;</span><span class="n">val</span><span class="s">&#34;: 22.5}, {&#34;</span><span class="n">id</span><span class="s">&#34;: &#34;</span><span class="n">hum</span><span class="s">&#34;, &#34;</span><span class="n">val</span><span class="s">&#34;: 55.0}]})&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">string_view</span> <span class="n">obj_str</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="p">(</span><span class="n">sensors</span> <span class="o">&gt;&gt;</span> <span class="n">obj_str</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">id</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">float</span> <span class="n">val</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1">// Parse the individual array element
+</span></span></span><span class="line"><span class="cl">    <span class="k">auto</span> <span class="n">sub_parser</span> <span class="o">=</span> <span class="n">json_parser</span><span class="p">(</span><span class="n">bind</span><span class="p">(</span><span class="s">&#34;id&#34;</span><span class="p">,</span> <span class="n">id</span><span class="p">),</span> <span class="n">bind</span><span class="p">(</span><span class="s">&#34;val&#34;</span><span class="p">,</span> <span class="n">val</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">    <span class="n">sub_parser</span><span class="p">.</span><span class="n">parse</span><span class="p">(</span><span class="n">obj_str</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="n">printf</span><span class="p">(</span><span class="s">&#34;Sensor %s: %f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">id</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span> <span class="n">val</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div>
+
+<h3 class="relative group">Null Tracking of directly-bound nodes
+    <div id="null-tracking-of-directly-bound-nodes" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#null-tracking-of-directly-bound-nodes" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>Distinguishing between an omitted key and an explicit <code>null</code> (clear state) for non-dynamic bindings is also possible.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">string_view</span> <span class="n">json</span> <span class="o">=</span> <span class="n">R</span><span class="s">&#34;({&#34;</span><span class="n">brightness</span><span class="s">&#34;: null})&#34;</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">brightness</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">brightness_node</span> <span class="o">=</span> <span class="n">bind</span><span class="p">(</span><span class="s">&#34;brightness&#34;</span><span class="p">,</span> <span class="n">brightness</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">json_parser</span><span class="p">(</span><span class="n">brightness_node</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">parser</span><span class="p">.</span><span class="n">parse</span><span class="p">(</span><span class="n">json</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="p">(</span><span class="n">brightness_node</span><span class="p">.</span><span class="n">was_set</span><span class="p">())</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="p">(</span><span class="n">brightness_node</span><span class="p">.</span><span class="n">was_null</span><span class="p">())</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Explicitly set to null!
+</span></span></span><span class="line"><span class="cl">        <span class="c1">// (nulls assign default-initalized values to bindings)
+</span></span></span><span class="line"><span class="cl">    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Set to a new value.
+</span></span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="c1">// no match =&gt; bindings are untouched.
+</span></span></span><span class="line"><span class="cl"><span class="p">}</span></span></span></code></pre></div></div>
+
+<h3 class="relative group">String Decoding Strategies
+    <div id="string-decoding-strategies" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#string-decoding-strategies" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>Depending on your memory constraints, you can choose how to handle escaped strings (like <code>\n</code>, <code>\&quot;</code>, or <code>\uXXXX</code> sequences):</p>
+<ol>
+<li><strong><code>std::string_view</code></strong>: Zero-copy. You get a view directly into the raw, unparsed JSON buffer.</li>
+<li><strong><code>std::span&lt;char&gt;</code></strong>: Provide your own stack buffer. StackJson decodes the string (including UTF-8 translation for <code>\u</code> sequences) into your buffer and safely shrinks the span to the exact decoded length.</li>
+<li><strong><code>std::string</code></strong>: The pragmatic escape hatch. StackJson will dynamically resize the heap string to perfectly fit the decoded characters with exactly <em>one</em> allocation.</li>
+</ol>
+
+<h3 class="relative group">🔍 Dynamic Parsing &amp; Unknown Keys
+    <div id="-dynamic-parsing--unknown-keys" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-dynamic-parsing--unknown-keys" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>StackJson is highly optimized for strict schema binding (extracting exactly the keys you ask for), but you can also dynamically catch and inspect unmapped data. By passing a lambda as the first argument to <code>json_parser</code>, you can create a <strong>catch-all callback</strong> that routes any unmatched named properties into a custom handler.</p>
+<p>The callback receives the active path and a <code>DynamicNodeBase</code> object, which provides zero-overhead type identification and extraction methods.</p>
+<div class="highlight-wrapper"><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-cpp" data-lang="cpp"><span class="line"><span class="cl"><span class="n">std</span><span class="o">::</span><span class="n">string_view</span> <span class="n">json</span> <span class="o">=</span> <span class="n">R</span><span class="s">&#34;({</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;known_key&#34;</span><span class="o">:</span> <span class="mi">42</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;dynamic_config&#34;</span><span class="o">:</span> <span class="p">{</span><span class="s">&#34;speed&#34;</span><span class="o">:</span> <span class="mi">100</span><span class="p">,</span> <span class="s">&#34;mode&#34;</span><span class="o">:</span> <span class="s">&#34;auto&#34;</span><span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="s">&#34;tags&#34;</span><span class="o">:</span> <span class="p">[</span><span class="s">&#34;esp32&#34;</span><span class="p">,</span> <span class="s">&#34;homeassistant&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="p">})</span><span class="s">&#34;;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">known_val</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">auto</span> <span class="n">parser</span> <span class="o">=</span> <span class="n">sjson</span><span class="o">::</span><span class="n">json_parser</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 1. The Catch-All Callback
+</span></span></span><span class="line"><span class="cl">    <span class="p">[</span><span class="o">&amp;</span><span class="p">](</span><span class="k">const</span> <span class="n">sjson</span><span class="o">::</span><span class="n">PathBase</span><span class="o">&amp;</span> <span class="n">path</span><span class="p">,</span> <span class="n">sjson</span><span class="o">::</span><span class="n">DynamicNodeBase</span><span class="o">&amp;</span> <span class="n">node</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// Get the leaf key name
+</span></span></span><span class="line"><span class="cl">        <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">key</span> <span class="o">=</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="n">path</span><span class="p">.</span><span class="n">get_element</span><span class="p">(</span><span class="n">path</span><span class="p">.</span><span class="n">depth</span><span class="p">()</span> <span class="o">-</span> <span class="mi">1</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">is_null</span><span class="p">())</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">printf</span><span class="p">(</span><span class="s">&#34;Key &#39;%s&#39; is explicitly null</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">key</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> 
+</span></span><span class="line"><span class="cl">        <span class="k">else</span> <span class="nf">if</span> <span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">is_array</span><span class="p">())</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">std</span><span class="o">::</span><span class="n">string</span> <span class="n">item</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// Iterate directly through the array elements
+</span></span></span><span class="line"><span class="cl">            <span class="k">while</span> <span class="p">(</span><span class="n">node</span> <span class="o">&gt;&gt;</span> <span class="n">item</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">printf</span><span class="p">(</span><span class="s">&#34;Array &#39;%s&#39; contains: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">key</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span> <span class="n">item</span><span class="p">.</span><span class="n">c_str</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> 
+</span></span><span class="line"><span class="cl">        <span class="k">else</span> <span class="nf">if</span> <span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">is_object</span><span class="p">())</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// Grab the raw JSON block without iterating
+</span></span></span><span class="line"><span class="cl">            <span class="n">printf</span><span class="p">(</span><span class="s">&#34;Object &#39;%s&#39;: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">key</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">raw</span><span class="p">()).</span><span class="n">c_str</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> 
+</span></span><span class="line"><span class="cl">        <span class="k">else</span> <span class="nf">if</span> <span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">is_string</span><span class="p">())</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// .as&lt;T&gt;() safely coerces and unescapes the value
+</span></span></span><span class="line"><span class="cl">            <span class="n">printf</span><span class="p">(</span><span class="s">&#34;String &#39;%s&#39;: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">key</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span> <span class="n">node</span><span class="p">.</span><span class="n">as</span><span class="o">&lt;</span><span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="o">&gt;</span><span class="p">().</span><span class="n">c_str</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> 
+</span></span><span class="line"><span class="cl">        <span class="k">else</span> <span class="nf">if</span> <span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">is_boolean</span><span class="p">()</span> <span class="o">||</span> <span class="n">node</span><span class="p">.</span><span class="n">is_number</span><span class="p">())</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">printf</span><span class="p">(</span><span class="s">&#34;Primitive &#39;%s&#39;: %s</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span> <span class="n">key</span><span class="p">.</span><span class="n">c_str</span><span class="p">(),</span> <span class="n">std</span><span class="o">::</span><span class="n">string</span><span class="p">(</span><span class="n">node</span><span class="p">.</span><span class="n">raw</span><span class="p">()).</span><span class="n">c_str</span><span class="p">());</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">},</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 2. Your explicit bindings follow normally
+</span></span></span><span class="line"><span class="cl">    <span class="n">sjson</span><span class="o">::</span><span class="n">bind</span><span class="p">(</span><span class="s">&#34;known_key&#34;</span><span class="p">,</span> <span class="n">known_val</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">parser</span><span class="p">.</span><span class="n">parse</span><span class="p">(</span><span class="n">json</span><span class="p">);</span></span></span></code></pre></div></div>
+
+<h4 class="relative group"><code>DynamicNodeBase</code> Capabilities:
+    <div id="dynamicnodebase-capabilities" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#dynamicnodebase-capabilities" aria-label="Anchor">#</a>
+    </span>
+    
+</h4>
+<ul>
+<li><strong>Type Identification:</strong> <code>is_null()</code>, <code>is_string()</code>, <code>is_array()</code>, <code>is_object()</code>, <code>is_boolean()</code>, <code>is_number()</code>.</li>
+<li><strong><code>.raw()</code></strong>: Returns a <code>std::string_view</code> of the exact, unparsed JSON block captured from the payload.</li>
+<li><strong><code>.as&lt;T&gt;()</code></strong>: Quickly extracts and coerces the value into a specific type (e.g., <code>auto s = node.as&lt;std::string&gt;();</code>).</li>
+<li><strong><code>operator&gt;&gt;</code></strong>: Use <code>while (node &gt;&gt; val)</code> to sequentially iterate over the elements of an array.</li>
+</ul>
+<hr>
+
+<h2 class="relative group">📊 Feature Support Matrix
+    <div id="-feature-support-matrix" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-feature-support-matrix" aria-label="Anchor">#</a>
+    </span>
+    
+</h2>
+
+<h3 class="relative group">🟢 Fully Supported
+    <div id="-fully-supported" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-fully-supported" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<ul>
+<li><strong>Zero-Allocation Traversal:</strong> Generating and parsing operate completely without the heap.</li>
+<li><strong>Compile-Time Depth Calculation:</strong> Parser bounds checking perfectly auto-sizes to the deepest path requested.</li>
+<li><strong>UTF-8 / Unicode Decoding:</strong> Translates <code>\uXXXX</code> sequences into valid UTF-8 bytes natively, and passes raw high-byte characters (like <code>°C</code> or emojis) through safely.</li>
+<li><strong>JSONC Extensions:</strong> Natively supports single (<code>//</code>) and multi-line (<code>/* */</code>) comments.</li>
+<li><strong>Trailing Commas:</strong> Safely routes around trailing commas in both objects and arrays.</li>
+<li><strong>Nested Objects &amp; Paths:</strong> Limitless object nesting within the boundaries of your RTOS stack.</li>
+<li><strong>Auto Type Coercion:</strong> Parser seamlessly converts strings to numbers/booleans and vice versa.</li>
+</ul>
+
+<h3 class="relative group">🟡 On the Roadmap (TODO)
+    <div id="-on-the-roadmap-todo" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-on-the-roadmap-todo" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<ul>
+<li><strong>NDJSON (Newline Delimited JSON):</strong> Implementing a streaming reset so the parser can continuously evaluate a stream of back-to-back JSON objects over a serial or TCP socket.</li>
+</ul>
+
+<h3 class="relative group">🔴 Out of Scope / Infeasible (The Trade-offs)
+    <div id="-out-of-scope--infeasible-the-trade-offs" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-out-of-scope--infeasible-the-trade-offs" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>Because StackJson operates entirely on the stack and refuses to allocate dynamic memory, we cannot support the following features found in heavy desktop libraries:</p>
+<ul>
+<li><strong>Full DOM Manipulation:</strong> We will never load an arbitrary JSON tree into a mutable in-memory DOM. You cannot parse a document, alter a specific nested node, and then re-emit it.</li>
+<li><strong>Perfect Float Round-Tripping:</strong> To save up to 150kB of binary size (by avoiding algorithms like Ryu/Dragonbox), we fall back to <code>&lt;charconv&gt;</code> and <code>&lt;cstdio&gt;</code>. This is fast and small, but may slightly alter float string representations (e.g., <code>3.14</code> might emit as <code>3.1400000000000001</code>).</li>
+<li><strong>Duplicate Key Detection:</strong> If a payload contains <code>{&quot;a&quot;: 1, &quot;a&quot;: 2}</code>, our parser will evaluate the assignment twice, leaving your variable with the last seen value.</li>
+</ul>
+
+<h3 class="relative group">🟡 Dynamic / Heap-Based Keys (Supported via LValues)
+    <div id="-dynamic--heap-based-keys-supported-via-lvalues" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-dynamic--heap-based-keys-supported-via-lvalues" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>StackJson does not allocate memory for keys, but it <strong>can</strong> bind to your dynamically generated keys (e.g., <code>std::string</code>). Thanks to perfect forwarding, the library safely captures a reference to your local string variables. To protect you from dangling memory, a compile-time guardrail will intentionally break the build if you attempt to bind to a temporary/rvalue string.</p>
+
+<h3 class="relative group">🛡️ Safety &amp; Guardrails
+    <div id="-safety--guardrails" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#-safety--guardrails" aria-label="Anchor">#</a>
+    </span>
+    
+</h3>
+<p>StackJson is designed to be highly resilient in embedded environments, prioritizing device uptime and developer experience:</p>
+<ul>
+<li><strong>Null-Pointer Protection:</strong> Standard <code>std::string_view</code> implementations will immediately segfault if passed a <code>nullptr</code>. StackJson intercepts runtime nulls. A null value pointer safely emits as a JSON <code>null</code>, and a null path key emits as <code>&quot;null_path_error&quot;</code> to keep your device alive and make debugging obvious.</li>
+<li><strong>Human-Readable Compiler Errors:</strong> If you forget to wrap a payload in <code>node()</code>, or if you attempt to serialize an unsupported custom object, StackJson uses C++20 concepts and <code>static_assert</code> to halt the build with a clear, plain-English explanation of exactly what went wrong.</li>
+<li><strong>Dangling String Prevention:</strong> The library gladly accepts dynamic <code>std::string</code> keys and values via perfect forwarding, but uses compile-time checks to explicitly reject temporary/rvalue strings that would cause use-after-free memory corruption.</li>
+</ul>
+
+          
+          
+          
+        </div>
+        
+        
+
+        
+
+        
+
+      </div>
+    </section>
+
+    
+    <footer class="pt-8 max-w-prose print:hidden">
+      
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600">
+      <div class="flex justify-between pt-3">
+        <span class="flex flex-col">
+          
+            <a
+              class="flex text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/docs/espbase/src/espbase/readme/">
+              <span class="leading-6">
+                <span class="inline-block rtl:rotate-180">&larr;</span>&ensp;
+              </span>
+            </a>
+            
+          
+        </span>
+        <span class="flex flex-col items-end">
+          
+            <a
+              class="flex text-right text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
+              href="/docs/espbase/src/espbase/stack_json/migrating_from_arduino_json/">
+              <span class="leading-6">
+                Migrating from ArduinoJson to StackJson&ensp;<span class="inline-block rtl:rotate-180">&rarr;</span>
+              </span>
+            </a>
+            
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+      
+
+    </footer>
+  </article>
+
+        
+
+
+  
+
+
+
+
+
+
+<div
+  id="scroll-to-top"
+  class="fixed bottom-6 end-6 z-50 transform translate-y-4 opacity-0 duration-200">
+  <a
+    href="#the-top"
+    class="pointer-events-auto flex h-12 w-12 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top"
+    title="Scroll to top">
+    &uarr;
+  </a>
+</div>
+
+      </main><footer id="site-footer" class="py-10 print:hidden">
+  
+  
+  <div class="flex items-center justify-between">
+    
+    
+
+    
+    
+      <p class="text-xs text-neutral-500 dark:text-neutral-400">
+        
+        
+        Powered by <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://gohugo.io/" target="_blank" rel="noopener noreferrer">Hugo</a> &amp; <a class="hover:underline hover:decoration-primary-400 hover:text-primary-500"
+          href="https://blowfish.page/" target="_blank" rel="noopener noreferrer">Blowfish</a>
+      </p>
+    
+  </div>
+  
+  
+</footer>
+
+    </div>
+    
+    
+  </body>
+  
+</html>
